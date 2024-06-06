@@ -27,7 +27,7 @@
       <h3 class="part-2">And I'm a <span>Front-End Developer</span></h3>
       <p>I am a student of Computer Science studying at Malla Reddy University, Hyderabad.</p>
       <div class="social-icons">
-        <a href="https://github.com/pinnamdevendra"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/Devendra440"><i class="fab fa-github"></i></a>
         <a href="https://twitter.com/GuptaPinnam"><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com/mr.dev__2004/"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/pinnam-devendra-gupta-b3b306291/"><i class="fab fa-linkedin"></i></a>
@@ -124,7 +124,7 @@
         <a href="#" style="--i:5">Contact</a>
     </nav>
     <div class="social-icons">
-        <a href="https://github.com/pinnamdevendra"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/Devendra440"><i class="fab fa-github"></i></a>
         <a href="https://twitter.com/GuptaPinnam"><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com/mr.dev__2004/"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/pinnam-devendra-gupta-b3b306291/"><i class="fab fa-linkedin"></i></a>
@@ -133,10 +133,11 @@
 </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.4.0/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-F4hIAn5bStDWXiy4vlvAeBkF0ZuzxUy6mKB9Hj0uqTZHtNs1LZKkMFjus3D9oPY79Ky+R3a4TbnWwq8gXkrY/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     document.getElementById("downloadButton").addEventListener("click", function() {
       const doc = new jsPDF();
-      const content = document.querySelector('.hero-container').innerText;
+      const content = document.querySelector('.hero-container').textContent;
       doc.text(content, 10, 10);
       doc.save("portfolio.pdf");
     });
